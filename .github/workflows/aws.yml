@@ -26,10 +26,7 @@
 on:
   push:
    branches: [ master ]
- # pull_request:
- #   branches: [ master ]
-   paths: 
-        - aspnetdocker/**
+
 name: Deploy to Amazon ECS
 
 jobs:
