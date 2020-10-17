@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "V3Fhkfw8YifgP//erBNGY/7ABgjjEQh/gC4v9dU7tj8+X2qV4mTob/dIFIHd8vVZ6yPw8Hyn1DDnBumU4bQXPw==",
+  "success": true,
+  "projectFilePath": "D:\\gitopsPoc\\aspnetcore-docker\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Saurav_Roy\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
