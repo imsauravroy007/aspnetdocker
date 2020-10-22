@@ -19,9 +19,9 @@ jobs:
         dotnet-version: 3.1.301
     - name: Install dependencies
       run: dotnet restore
-      working-directory: src/aspnetdocker/WebApplication1.csproj
+      working-directory: aspnetdocker/WebApplication1.csproj
     - name: Build with dotnet
-      run: dotnet build src/aspnetdocker/WebApplication1.csproj --configuration Release
+      run: dotnet build aspnetdocker/WebApplication1.csproj --configuration Release
             
     - name: Test
       run: dotnet test --no-restore --verbosity normal
