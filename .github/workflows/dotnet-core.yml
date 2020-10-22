@@ -19,8 +19,7 @@ jobs:
         dotnet-version: 3.1.301
     - name: Install dependencies
       run: dotnet restore
-    - name: MSBuild
-      working-directory: src
-      run: msbuild MyProject.csproj
+    - name: Build with dotnet
+      run: dotnet build WebApplication1.csproj --configuration Release
     - name: Test
       run: dotnet test --no-restore --verbosity normal
