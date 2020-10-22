@@ -10,7 +10,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      working-directory: ./aspnetdocker  
+    
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET Core
@@ -19,9 +21,11 @@ jobs:
         dotnet-version: 3.1.301
     - name: Install dependencies
       run: dotnet restore
-      working-directory: aspnetdocker/WebApplication1.csproj
+      working-directory: ${{ env.working-directory }}
     - name: Build with dotnet
       run: dotnet build aspnetdocker/WebApplication1.csproj --configuration Release
+      working-directory: ${{ env.working-directory }}
             
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+      working-directory: ${{ env.working-directory }}
